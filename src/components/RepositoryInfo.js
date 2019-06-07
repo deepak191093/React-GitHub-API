@@ -1,4 +1,7 @@
 import React from "react";
+import Timer from "@material-ui/icons/TimerRounded";
+import LabelR from "@material-ui/icons/LabelRounded";
+
 
 class RepositoryInfo extends React.Component {
   constructor(props) {
@@ -8,10 +11,12 @@ class RepositoryInfo extends React.Component {
   render() {
     return (
       <div className="flex-box">
-        <h1>{this.props.name}</h1>
-        <h3>{this.props.description}</h3>
-        <h3>{this.props.language}</h3>
-        <h3>{this.props.created_at}</h3>
+        <div className="form-data">
+        {this.props.name && <p>{this.props.name}</p>}
+        {this.props.description && <p><LabelR />{this.props.description}</p>}
+        {this.props.language && <p><LabelR />{this.props.language}</p> }
+        {this.props.created_at && <p><Timer />{this.props.created_at}<Timer /></p>}
+        </div>
       </div>
     );
   }
