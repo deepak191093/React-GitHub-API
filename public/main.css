@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(135deg,  #6EBCF0 12%,#6347E3 50%,#1D0952 100%);
+ }
+.Search-container{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 4px;
+  display: inline-block;
+  border-radius: 8px;
+}
+.btn:hover {
+  background-color: white;
+  border: 2px solid #008cba;
+  color: #008cba;
+  transition: all 0.8s;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+.profile {
+  color: black;
+  margin-top: -25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  background-color:  #ddd;
+  padding: 20px;
+  z-index: 0;
+  font-family: Roboto, sans-serif;
+  }
+  .git:hover
+  {
+    transform: scale(1.5);
+  }
+
+.options {
+  border: 2px solid #008cba;
+  width: 80%;
+  margin: 18px auto;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  
+}
+
+.form {
+  font-size: 16px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #008cba;
+  color: #008cba;
+  padding: 8px;
+  width: 33%;
+  margin: auto 12px;
+  text-align: center;
+}
+
+.flex-container
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  align-content : stretch;
+  
+  
+}
+.flex-box
+{
+width: 30%;
+/* height: 30%; */
+margin: 12px;
+border: 2px solid steelblue;
+box-shadow: 2px 2px 6px 0px  rgb(0, 0, 0);
+}
+
+.flex-container  :hover{
+  transform: scale(1.06);
+  transition:  all 0.6s;
+}
+
+.flex-box h1
+{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
