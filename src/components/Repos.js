@@ -5,7 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import BackIcon from "@material-ui/icons/ArrowBack";
-import CircularProgress from '@material-ui/core/CircularProgress'
+import CircularProgress from "@material-ui/core/CircularProgress";
 class Repos extends React.Component {
   constructor(props) {
     super(props);
@@ -35,13 +35,20 @@ class Repos extends React.Component {
       return (
         <div>
           <AppBar position="fixed">
-          <Toolbar>
-            <IconButton edge="start" color="inherit" aria-label="Menu" onClick={()=>{window.history.back()}}>
-              <BackIcon />
-            </IconButton>
-            <Typography variant="h4">Git Hub API Search</Typography>
-          </Toolbar>
-        </AppBar>
+            <Toolbar>
+              <IconButton
+                edge="start"
+                color="inherit"
+                aria-label="Menu"
+                onClick={() => {
+                  window.history.back();
+                }}
+              >
+                <BackIcon />
+              </IconButton>
+              <Typography variant="h4">Git Hub Repository</Typography>
+            </Toolbar>
+          </AppBar>
           <div className="flex-container">
             {this.state.data.map(x => (
               <Info

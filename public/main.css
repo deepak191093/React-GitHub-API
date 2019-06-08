@@ -3,11 +3,9 @@
   font-family: Roboto, sans-serif;
 }
 body {
-  
-  background: linear-gradient(135deg,  #6EBCF0 12%,#6347E3 50%,#1D0952 100%);
-
- }
-.Search-container{
+  background: linear-gradient(135deg, #6ebcf0 12%, #6347e3 50%, #1d0952 100%);
+}
+.Search-container {
   margin-top: 100px;
   text-align: center;
 }
@@ -17,12 +15,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
-  background-color:  #ddd;
+  background-color: #ddd;
   padding: 20px;
   z-index: 0;
-  
-  }
-
+}
 
 .options {
   border: 2px solid #008cba;
@@ -32,7 +28,6 @@ body {
   color: white;
   text-align: center;
   padding: 8px;
-  
 }
 
 .form {
@@ -47,34 +42,26 @@ body {
   text-align: center;
 }
 
-.flex-container
-{
+.flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   color: white;
-  align-content : stretch;
-  
-  
+  align-content: stretch;
 }
-.flex-box
-{
-width: 30%;
-margin-top: 100px;
-margin-left: auto;
-margin-right: auto;
-box-shadow: 2px 2px 6px 0px  rgb(0, 0, 0), 4px 4px 8px 8px  rgb(0, 0, 0);
-border-radius : 12px;
-
+.flex-box {
+  width: 30%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 6px 0px rgb(0, 0, 0), 4px 4px 8px 8px rgb(0, 0, 0);
+  border-radius: 12px;
 }
 
-
-.flex-box p
-{
+.flex-box p {
   font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration-line: underline;
 }
-

@@ -71,14 +71,27 @@ class Search extends React.Component {
       <div className="Search-container">
         <AppBar position="fixed">
           <Toolbar>
-            <IconButton edge="start" color="inherit" aria-label="Menu" onClick={()=>{window.location.reload()}}>
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="Menu"
+              onClick={() => {
+                window.location.reload();
+              }}
+            >
               <MenuIcon />
             </IconButton>
             <Typography variant="h4">Git Hub API Search</Typography>
           </Toolbar>
         </AppBar>
 
-        <IconButton aria-label="Menu" style={{backgroundColor : "white"}} onClick={()=> {this.refs.userData.value = "";}}>
+        <IconButton
+          aria-label="Menu"
+          style={{ backgroundColor: "white" }}
+          onClick={() => {
+            this.refs.userData.value = "";
+          }}
+        >
           <DeleteIcon />
         </IconButton>
         <input
@@ -87,7 +100,11 @@ class Search extends React.Component {
           placeholder="Git Hub User Name"
           ref="userData"
         />
-        <IconButton aria-label="Search" onClick={this.handleClick} style={{backgroundColor : "white"}}>
+        <IconButton
+          aria-label="Search"
+          onClick={this.handleClick}
+          style={{ backgroundColor: "white" }}
+        >
           <SearchIcon />
         </IconButton>
 

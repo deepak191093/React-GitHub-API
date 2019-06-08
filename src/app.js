@@ -8,7 +8,7 @@ const store = configureStore();
 
 store.subscribe(() => {
   localStorage.setItem("UserProfile", JSON.stringify(store.getState()));
-  });
+});
 
 const jsx = (
   <Provider store={store}>

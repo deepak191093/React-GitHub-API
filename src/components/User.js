@@ -11,7 +11,6 @@ class User extends React.Component {
   }
 
   render() {
-    
     return (
       <div className="options">
         <h2>User Information </h2>
@@ -25,10 +24,11 @@ class User extends React.Component {
             margin: "auto",
             border: "2px solid white"
           }}
-          
         />
         <div className="profile">
-          <h3>{this.props.data.login}</h3>
+          <h3 style={{ textTransform: "uppercase" }}>
+            {this.props.data.login}
+          </h3>
           <h3>
             {" "}
             {this.props.data.location ? <LocationCity /> : ""}{" "}
@@ -58,7 +58,7 @@ class User extends React.Component {
               this.props.handleDeleteUser(this.props.data.login);
             }}
           >
-          Delete
+            Delete
             <DeleteIcon />
           </Button>
         </div>
